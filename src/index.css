@@ -24,6 +24,7 @@ h3{
   background-color: #87b4c085;
   color: #ff6b6b;
   padding: 20px;
+  text-align: center;
 }
 .label{
   font-size: 30px;
@@ -36,6 +37,17 @@ h3{
   background-color:#ff6b6b46 ;
   width:  400px;
   padding: 30px;
-  margin-left: 380px;
+  margin-left: 420px;
 
+}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.wel {
+  text-align: center;
+  font-size: 30px;
 }
