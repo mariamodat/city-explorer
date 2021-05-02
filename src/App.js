@@ -22,7 +22,7 @@ constructor (props){
 
 
 
-getLocation=(e)=> {
+getLocation= async(e)=> {
   e.preventDefault();
 let url =`https://us1.locationiq.com/v1/search.php?key=pk.3fb22be1b6805592b5a39af7e5dcbe46&q=${this.state.search}&format=json`;
 
@@ -38,6 +38,9 @@ this.setState({
 
 updateSearch=(e)=>{
   e.preventDefault();
+  this.setState({
+    search: e.target.value,
+  })
   
 }
 
@@ -50,13 +53,15 @@ updateSearch=(e)=>{
       <>
       <h1> City Explore</h1>
       <h3> Where would You like to Explore ?</h3>
-      <Form className='form'>
+      <Form onSubmit={this.getLocation} className='form'>
+      <hr/>
       <Form.Group as={Row} controlId="formHorizontalEmail">
         <Form.Label className='label' column sm={2}>
-          enter the name of the City!
+          Enter the name of the City!
         </Form.Label>
+        
         <Col sm={10}>
-          <Form.Control className='label' type="email" placeholder="name of the city " />
+          <Form.Control onChange={this.updateSearch} className='label'  placeholder="name of the city "  />
         </Col>
       </Form.Group>
     <br/> <hr/>
@@ -66,6 +71,11 @@ updateSearch=(e)=>{
         </Col>
       </Form.Group>
     </Form>
+    <h2>
+       {/* {this.data.display_name} */}
+       Welcome To 
+       </h2>
+    <img src="" alt=""/>
     <Footer/>
       </>
       );
