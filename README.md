@@ -1,17 +1,9 @@
 
+# City Explorer 
 
-# Axios and React 
- I will build a React application that uses the Axios library to make user-initiated reqeusts for data from a thrid-party API.
-
- here is the workflow 
-
- ![img](./img/ok.jpg)
-
-
-# Project Name
-
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Mariam AlOwdat
+**Version**: 1.0.0 
+<!-- (increment the patch/fix version number if you make more commits past your first submission) -->
 
 ## Overview
 I will build a React application that uses the Axios library to make user-initiated reqeusts for data from a thrid-party API.
@@ -29,6 +21,12 @@ we're using React.JS as the language of programming however we use the React-boo
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+* Created a new repo called city-explorer on GitHub, initialized with no files.
+* Add a .gitignore file with React configurations.
+* Used create-react-app to setup a new React application named city-explorer in My local projects directory.
+*  Connectd my GitHub repo to my local repo using the directions on GitHub.
+* Created a package.json file with all dependencies and any associated details related to configuration. includes: Axios and Bootstrap. 
+*  Procure a LocationIQ free-tier account. From the Dashboard, navigate to your API Access Tokens page. View, then Update the existing token, to change the label to "City Explorer"
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -62,7 +60,7 @@ we're using React.JS as the language of programming however we use the React-boo
 
 
 
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -131,4 +129,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

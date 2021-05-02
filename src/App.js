@@ -1,25 +1,77 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Footer from './components/footer';
+import axios from 'axios';
+
+
+class App extends React.Component {
+
+constructor (props){
+  super(props);
+  this.state = {
+    data: '',
+    search: '',
+    show : false,
+  }
 }
+
+
+
+getLocation=(e)=> {
+  e.preventDefault();
+let url =`https://us1.locationiq.com/v1/search.php?key=pk.3fb22be1b6805592b5a39af7e5dcbe46&q=${this.state.search}&format=json`;
+
+let req= await axios.get(url);
+this.setState({
+  data:req.data[0],
+  show: true,
+
+});
+
+}
+
+
+updateSearch=(e)=>{
+  e.preventDefault();
+  
+}
+
+
+
+
+  render() { 
+
+    return (
+      <>
+      <h1> City Explore</h1>
+      <h3> Where would You like to Explore ?</h3>
+      <Form className='form'>
+      <Form.Group as={Row} controlId="formHorizontalEmail">
+        <Form.Label className='label' column sm={2}>
+          enter the name of the City!
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control className='label' type="email" placeholder="name of the city " />
+        </Col>
+      </Form.Group>
+    <br/> <hr/>
+      <Form.Group as={Row}>
+        <Col sm={{ span: 10, offset: 2 }}>
+          <Button className='label' type="submit">Explore !</Button>
+        </Col>
+      </Form.Group>
+    </Form>
+    <Footer/>
+      </>
+      );
+  }
+}
+ 
+
 
 export default App;
