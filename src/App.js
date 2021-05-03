@@ -21,25 +21,6 @@ class App extends React.Component {
   }
 
 
-  // getCity=()=>{
-  //   Axios.get('https://us1.locationiq.com/v1/search.php?key=pk.3fb22be1b6805592b5a39af7e5dcbe46&q=${this.state.search}&format=json').then(
-  //     (response)=>{
-  //       this.setState({
-  //         citie: response.data[0],
-  //         show:true,
-  //       })
-  //     }
-  //   )
-  // }
-
-
-
-
-
-
-
-
-
   getLocation = async (e) => {
     e.preventDefault();
     let url = `https://us1.locationiq.com/v1/search.php?key=pk.3fb22be1b6805592b5a39af7e5dcbe46&q=${this.state.search}&format=json`;
@@ -105,16 +86,11 @@ class App extends React.Component {
 
         }
        
-        
-      
-
-       
         <Footer />
       </>
     );
   }
 }
-
 
 
 export default App;

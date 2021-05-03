@@ -31,9 +31,53 @@ we're using React.JS as the language of programming however we use the React-boo
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
+* https://www.youtube.com/watch?v=sfp5K_5GHNg
+* LocationIO for the free API 
 
 
+# lab o6 
 
+Name of feature: Set up your React repository & API keys.
+
+Estimate of time needed to complete: 15 mins
+
+Start time: 5pm  
+
+Finish time: 5:15 pm 
+
+Actual time needed to complete: 2 hours 
+
+Name of feature: ocations: As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
+
+Estimate of time needed to complete: 1 hour 
+
+Start time: __10 pm___
+
+Finish time: __11 pm ___
+
+Actual time needed to complete: __1 hour ___
+
+
+Name of feature:Map: As a user, I want to see a map of the city so that I can see the layout of the area I want to explore. 
+
+Estimate of time needed to complete: __30 mins___
+
+Start time: ___11:30 pm __
+
+Finish time: __12 pm ___
+
+Actual time needed to complete: 40 mins 
+
+
+Name of feature: Errors: As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
+
+Estimate of time needed to complete: __30 mins ___
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
 
 
 
