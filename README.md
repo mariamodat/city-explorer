@@ -73,11 +73,32 @@ Name of feature: Errors: As a user, I want clear messages if something goes wron
 
 Estimate of time needed to complete: __30 mins ___
 
-Start time: _____
+Start time: ___12:30 am__
 
-Finish time: _____
+Finish time: __1:00__am_
 
-Actual time needed to complete: _____
+Actual time needed to complete: _30 mins____
+
+# class 07 
+
+# Project Name
+
+**Author**: mariam 
+**Version**: 1.0.0 
+
+## Overview
+I will begin building MY own custom API server, which will provide data for the City Explorer front-end application. This means users will get to see not only the map, but also interesting information about the area, provided by a variety of third-party APIs that MY server will manage.
+
+## Getting Started
+SEARCH ABOUT THE NAME OF THE CITY.ONCE THE SUBMITS THRE FORM , THE DATSA WILL  BE RENDERED FROM THER SERVER.
+
+## Architecture
+* Send the full array back to the client who requested data from the weather endpoinT.
+* When the server returns the array of forecast data, show the Weather component, populated with the server data.
+* Use appropriate Bootstrap components to nicely display the forecast data. 
+
+
+
 
 
 
