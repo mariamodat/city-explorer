@@ -99,7 +99,15 @@ SEARCH ABOUT THE NAME OF THE CITY.ONCE THE SUBMITS THRE FORM , THE DATSA WILL  B
 
 
 
+Name of feature: Weather (placeholder): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip.
 
+Estimate of time needed to complete: ___4hours__
+
+Start time: ___5pm __
+
+Finish time: __9pm___
+
+Actual time needed to complete: __4 hours ___
 
 
 
