@@ -1,8 +1,5 @@
 import React from 'react';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
-import Container from 'react-bootstrap/Container';
 
 class Weather extends React.Component {
 
@@ -12,15 +9,18 @@ class Weather extends React.Component {
     console.log(this.props.getWeather);
     return (
       <>
-        <Table striped bordered hover variant="dark" className='table'>
-          <thead className='table'>
-            <tr className='table'>
-              <th className='table'>#</th>
-              <td> </td>
-            </tr>
-          </thead>
+        <img className='imgW' src="https://www.timeanddate.com/scripts/weather_og.php?h1=Weather&h2=Local%20Weather%20Around%20the%20World" alt=""/>
+        <Table striped bordered hover variant="dark" >
+          <div className='tblBk'>
+          
+            <thead className='table'>
+              <tr className='table'>
+                <th className='table'> City Forecast</th>
+                <td> </td>
+              </tr>
+            </thead>
 
-       
+
 
             {this.props.getWeather.map(city =>
             (
@@ -31,14 +31,14 @@ class Weather extends React.Component {
                 <tr>
                   <td className='table1' colSpan="2">  {city.forecast}</td>
                 </tr>
-
+                <th></th>
 
               </>
             ))
 
             }
 
-          
+          </div>
         </Table>
       </>
     );

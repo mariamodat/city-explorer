@@ -28,7 +28,7 @@ class App extends React.Component {
     try 
     {
 
-      let url = `https://us1.locationiq.com/v1/search.php?key=pk.3fb22be1b6805592b5a39af7e5dcbe46&q=${this.state.search}&format=json`;
+      let url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.search}&format=json`;
   
       const req = await Axios.get(url);
      
@@ -39,7 +39,11 @@ class App extends React.Component {
 
 catch (error)
 {
-
+this.setState({
+  dataErr: error.response.data.error,
+  msg: error.response.status,
+  
+})
   console.log(error.response) ;
  }
  this.getWeatherData()
@@ -47,7 +51,7 @@ catch (error)
 
 
   getWeatherData = async () => {
-    const expressWeatherUrl = `http://localhost:5000/weather`;
+    const expressWeatherUrl = `${process.env.REACT_APP_SERVER}/weather`;
     const expressReq = await Axios.get(expressWeatherUrl);
     console.log(expressReq.data);
     this.setState({
