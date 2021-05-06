@@ -15,9 +15,10 @@ class Movie extends React.Component {
 
               <>
                 <Card bg="primary" text="white" style={{ width: '18rem' }}>
-                  <Card.Header>{movie.title}</Card.Header>
+                  <Card.Header className='title'>{movie.title}</Card.Header>
                   <Card.Body>
                     <Card.Title>{movie.avg}</Card.Title>
+                    <img src={`${movie.image}`} alt="movies"/>
                     <Card.Text>
                       {movie.overview}
                     </Card.Text>
