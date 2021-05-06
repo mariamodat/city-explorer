@@ -9,11 +9,10 @@
 I will build a React application that uses the Axios library to make user-initiated reqeusts for data from a thrid-party API.
 
 
-## Getting Started
 
-here is the workflow 
 
- ![img](./img/ok.jpg)
+
+
 
 ## Architecture
 we're using React.JS as the language of programming however we use the React-bootstrap library to style the website and the Axios library to connect the website with the server as well .
@@ -46,6 +45,7 @@ Start time: 5pm
 Finish time: 5:15 pm 
 
 Actual time needed to complete: 2 hours 
+ ![img](./img/ok.jpg)
 
 Name of feature: ocations: As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
 
@@ -81,6 +81,7 @@ Actual time needed to complete: _30 mins____
 
 # class 07 
 
+![img](./img/wrrc.png)
 # Project Name
 
 **Author**: mariam 
@@ -112,6 +113,9 @@ Actual time needed to complete: __4 hours ___
 
 
 
+
+# lab 08 
+![img3](./img/08.jpeg)
 
 
 
