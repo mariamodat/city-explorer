@@ -1,6 +1,7 @@
 import React from 'react';
-import CardColumns from 'react-bootstrap/CardColumns';
+// import CardColumns from 'react-bootstrap/CardColumns';
 import Card from 'react-bootstrap/Card'
+// import Card from 'react-bootstrap/Card'
 class Movie extends React.Component {
 
   render() {
@@ -8,35 +9,31 @@ class Movie extends React.Component {
 
     return (
       <>
+{this.props.getMovie.map(movie =>
+  <Card className='card' style={{ width: '18rem' , fontSize:'24px', }}>
+  <Card.Img variant="top" src={movie.image} />
+  <Card.Body>
+    <Card.Title style={{fontSize:'30px' , fontWeight:'bolder'}}>{movie.title}</Card.Title>
+    <Card.Text className='overView'>
+     {movie.overview}
+    </Card.Text>
+    {`⭐⭐⭐⭐${movie.votes}`}
+  </Card.Body>
+  <Card.Text>
+  {` Average Votes 👍${movie.avg}`}
+    </Card.Text>
+    <Card.Text>
+    {`Popularity  ⭐${movie.popularity}`}
+    </Card.Text>
+    <Card.Text>
+     {`Released on  📅 ${movie.released_on}`}
+    </Card.Text>
+    <hr />
+    
+</Card>
 
-        <CardColumns>
-          {this.props.getMovie.map(movie => {
-            return (
-
-              <>
-                <Card bg="primary" text="white" style={{ width: '18rem' }}>
-                  <Card.Header className='title'>{movie.title}</Card.Header>
-                  <Card.Body>
-                    <Card.Title>{movie.avg}</Card.Title>
-                    <img src={`${movie.image}`} alt="movies"/>
-                    <Card.Text>
-                      {movie.overview}
-                    </Card.Text>
-   
-      <Card.Title>{movie.votes}</Card.Title>
-                    <Card.Title>{movie.popularity}</Card.Title>
-                    <Card.Title>{movie.released_on}</Card.Title>
-
-                  </Card.Body>
-                </Card>
-
-
-              </>
-
-            )
-
-          })}
-        </CardColumns>
+)}
+     
       </>
     );
   }

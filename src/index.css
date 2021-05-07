@@ -77,3 +77,13 @@ h3{
 .title {
   font-size: 30px;
 }
+
+.overView{
+  font-family: 'Itim', cursive;
+  size: 500px;
+}
+.card{
+  float: left;
+  margin-top: 60px;
+  width: 300px;
+}

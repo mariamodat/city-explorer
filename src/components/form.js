@@ -19,7 +19,7 @@ class Myform extends React.Component {
         </Form.Label>
 
             <Col sm={10}>
-              <Form.Control onChange={this.props.updateSearch} className='label' placeholder="name of the city " />
+              <Form.Control style={{textAlign:'center'}} onChange={this.props.updateSearch} className='label' placeholder="name of the city " />
             </Col>
           </Form.Group>
           <br /> <hr />
