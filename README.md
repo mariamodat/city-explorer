@@ -117,11 +117,30 @@ Actual time needed to complete: __4 hours ___
 # lab 08 
 ![img3](./img/08.jpeg)
 
+Name of feature: _______________ Weather (live): As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip._________________
+
+Estimate of time needed to complete: __2 hours___
+
+Start time: __10 pm ___
+
+Finish time: __1 am ___
+
+Actual time needed to complete: __3 hours___
 
 
 
 
 
+
+Name of feature: __________Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination.______________________
+
+Estimate of time needed to complete: __1 hour___
+
+Start time: __10 pm___
+
+Finish time: __11:30pm___
+
+Actual time needed to complete: __1:30 hour___
 
 
 
