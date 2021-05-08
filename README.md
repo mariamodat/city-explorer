@@ -129,7 +129,7 @@ Actual time needed to complete: __3 hours___
 
 
 
-
+## Feature #2 
 
 
 Name of feature: __________Movies: As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination.______________________
@@ -143,11 +143,29 @@ Finish time: __11:30pm___
 Actual time needed to complete: __1:30 hour___
 
 
+# lab 09 
+Name of feature: _______________ Refactor: Modularize the back-end codebase._________________
+
+Estimate of time needed to complete: __30 mins___
+
+Start time: __5 pm___
+
+Finish time: __5:40 pm___
+
+Actual time needed to complete: __40 mins___
 
 
+# lab 10 
 
+Name of feature: ____________: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls.____________________
 
+Estimate of time needed to complete: __20 mins___
 
+Start time: __6:30 pm___
+
+Finish time: _7:pm____
+
+Actual time needed to complete: __30 mins___
 
 
 

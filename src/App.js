@@ -113,7 +113,7 @@ class App extends React.Component {
         }
 
         {this.state.show2 &&
-          <Movie getMovie={this.state.moviesData}
+           <Movie getMovie={this.state.moviesData}
             show={this.state.show2} />}
 
         <Footer />
