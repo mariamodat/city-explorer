@@ -11,7 +11,7 @@ class Movie extends React.Component {
       <>
 {this.props.getMovie.map(movie =>
   <Card className='card' style={{ width: '18rem' , fontSize:'24px', }}>
-  <Card.Img variant="top" src={movie.image} />
+  <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500${movie.image}`} />
   <Card.Body>
     <Card.Title style={{fontSize:'30px' , fontWeight:'bolder'}}>{movie.title}</Card.Title>
     <Card.Text className='overView'>
