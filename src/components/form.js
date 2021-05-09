@@ -9,12 +9,12 @@ class Myform extends React.Component {
   render() {
     
     return (
-      <>
+      <div className='star'>
  
         <Form onSubmit={this.props.getLocation} className='form'>
           <hr />
           <Form.Group onSubmit={this.props.getLocation} as={Row} controlId="formHorizontalEmail">
-            <Form.Label className='label' column sm={2}>
+            <Form.Label className='label'>
               Enter the name of the City!
         </Form.Label>
 
@@ -24,14 +24,14 @@ class Myform extends React.Component {
           </Form.Group>
           <br /> <hr />
           <Form.Group as={Row}>
-            <Col sm={{ span: 10, offset: 2 }}>
+            <Col sm={{ span: 10, }}>
               <Button className='label' type="submit"> Explore !</Button>
             </Col>
           </Form.Group>
         </Form>
 
 
-      </>
+      </div>
     );
   }
 }

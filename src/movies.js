@@ -1,5 +1,5 @@
 import React from 'react';
-// import CardColumns from 'react-bootstrap/CardColumns';
+import CardColumns from 'react-bootstrap/CardColumns';
 import Card from 'react-bootstrap/Card'
 // import Card from 'react-bootstrap/Card'
 class Movie extends React.Component {
@@ -8,33 +8,33 @@ class Movie extends React.Component {
     console.log('getMovies', this.props.getMovie);
 
     return (
-      <>
+      <CardColumns >
 {this.props.getMovie.map(movie =>
-  <Card className='card' style={{ width: '23rem' , fontSize:'20px', }}>
-  <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500${movie.image}`} />
+  <Card className='card' style={{ width: '20rem' , fontSize:'20px', }}>
+  <Card.Img variant="top" className='cardimg' src={`https://image.tmdb.org/t/p/w500${movie.image}`} />
   <Card.Body>
-    <Card.Title style={{fontSize:'30px' , fontWeight:'bolder'}}>{movie.title}</Card.Title>
+    <Card.Title className='title1' style={{fontSize:'26px' , fontWeight:'bolder' , }}>{movie.title}</Card.Title>
     <Card.Text className='overView'>
      {movie.overview}
-    </Card.Text>
+    </Card.Text >
     {`⭐⭐⭐⭐${movie.votes}`}
   </Card.Body>
-  <Card.Text>
+  <Card.Text className='rates'>
   {` Average Votes 👍${movie.avg}`}
     </Card.Text>
-    <Card.Text>
+    <Card.Text  className='rates'>
     {`Popularity  ⭐${movie.popularity}`}
     </Card.Text>
-    <Card.Text>
+    <Card.Text  className='rates'>
      {`Released on  📅 ${movie.released_on}`}
     </Card.Text>
-    <hr />
+    
     
 </Card>
 
 )}
      
-      </>
+      </CardColumns>
     );
   }
 }
