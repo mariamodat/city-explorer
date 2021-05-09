@@ -2,6 +2,7 @@
 import './App.css';
 import React from 'react';
 import Myform from './components/form';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from './components/footer';
 import Axios from 'axios';
