@@ -1,6 +1,6 @@
 import React from 'react';
 import CardColumns from 'react-bootstrap/CardColumns';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
 // import Card from 'react-bootstrap/Card'
 class Movie extends React.Component {
 
@@ -8,11 +8,15 @@ class Movie extends React.Component {
     console.log('getMovies', this.props.getMovie);
 
     return (
+      <>
+      <h3 className='m'> Enjoy Watching these Movies</h3>
       <CardColumns >
 {this.props.getMovie.map(movie =>
   <Card className='card' style={{ width: '20rem' , fontSize:'20px', }}>
+    
   <Card.Img variant="top" className='cardimg' src={`https://image.tmdb.org/t/p/w500${movie.image}`} />
   <Card.Body>
+  
     <Card.Title className='title1' style={{fontSize:'26px' , fontWeight:'bolder' , }}>{movie.title}</Card.Title>
     <Card.Text className='overView'>
      {movie.overview}
@@ -35,6 +39,7 @@ class Movie extends React.Component {
 )}
      
       </CardColumns>
+      </>
     );
   }
 }

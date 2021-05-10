@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Marck Script', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
@@ -16,20 +16,34 @@ h1 {
   font-size: 30px;
   color: #284b63;
   font-weight: 30px;
+  box-shadow: 10px 10px 8px 10px #888888;
 
   background-image: url("https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2017/08/NYC-aerial-view.jpg");
 margin-top: -10px;
 padding: 70px;
 
 }
+
+hr{
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
 h3{
   font-size: 60px;
-  background-color: #455e89d8;
+  /* background-color: #455e89d8; */
   font-family: 'Marck Script', cursive;
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 40px;
+  color: #284b63;
+
   text-align: center;
+  font-weight: 40px;
+  
 }
+
+
 
 .label{
   font-family: 'Marck Script', cursive;
@@ -55,6 +69,7 @@ color: whitesmoke;
 background-image: url(./images/ii.jpg);
 padding: 30px;
 box-shadow: 10px 10px 8px 10px #888888;
+margin-bottom: 60px;
 }
 
 .wel22{
@@ -69,12 +84,17 @@ font-size: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 45%;
   margin-bottom: 40px;
 }
 .t1{
 
   size: 50px;
+}
+.m {
+  background-color: #284b632d;
+  box-shadow: 10px 10px 8px 10px #888888;
+
 }
 
 .title {
@@ -98,6 +118,12 @@ font-size: 20px;
 .cardimg{
   /* size: 200px; */
   height: 300px;
+  transition: transform .2s; 
+}
+.cardimg:hover{
+  transform: scale(1.08);
+  box-shadow: 10px  8px 5px #888888;
+
 }
 
 .rates{

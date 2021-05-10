@@ -12,7 +12,7 @@ class Weather extends React.Component {
 
         <img className='imgW' src="https://www.timeanddate.com/scripts/weather_og.php?h1=Weather&h2=Local%20Weather%20Around%20the%20World" alt="" />
         <div className='t1'>
-        <Table striped bordered hover variant="dark" >
+        <Table className='t1' striped bordered hover variant="dark" >
 
 
           <thead >

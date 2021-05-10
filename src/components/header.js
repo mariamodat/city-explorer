@@ -4,8 +4,9 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <h1> City Explore</h1>
-        <h3> Where would You like to Explore ?</h3>
+        <h1 > City Explore</h1>
+        
+        <h3 > Where would You like to Explore ?</h3>
       </>
     );
   }
